@@ -49,52 +49,48 @@ public class Main {
 
         // Task 4
         System.out.println("Задача 4");
-        int deliveryDistance = 59;
+        int deliveryDistance = 95;
         int days;
         if (deliveryDistance > 100) {
-            System.out.println("Доставка не осуществляется");
+        System.out.println("Доставка не осуществляется");
         } else {
             if (deliveryDistance <= 20) {
-                days = 1;
-            } else if (deliveryDistance <= 60) {
-                days = 2;
-            } else {
-                days = 3;
-            } System.out.println("Потребуется дней: " + days);}
-
+        days = 1;
+        } else if (deliveryDistance <= 60) {
+        days = 2;
+        } else {
+        days = 3;
+        }
+        System.out.println("Потребуется дней: " + days);}
 
         // Task 5
         System.out.println("Задача 5");
-        int monthNumber = 4;
-        if (monthNumber > 12 || monthNumber < 1) {
-            System.out.println("Номер месяца введён неверно");
-        } else {
+        int monthNumber = 11;
+        switch (monthNumber) {
+           case 12:
+           case 1:
+           case 2:
+        System.out.println("Зима");
+           break;
+           case 3:
+           case 4:
+           case 5:
+         System.out.println("Весна");
+           break;
+           case 6:
+           case 7:
+           case 8:
+         System.out.println("Лето");
+           break;
+           case 9:
+           case 10:
+           case 11:
+          System.out.println("Осень");
+           break;
+           default:
+          System.out.println("Неверный месяц");
+           break;
         }
-            switch (monthNumber) {
-                case 12:
-                case 1:
-                case 2:
-                    System.out.println("Зима");
-                    break;
-                case 3:
-                case 4:
-                case 5:
-                    System.out.println("Весна");
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    System.out.println("Лето");
-                    break;
-                case 9:
-                case 10:
-                case 11:
-                    System.out.println("Осень");
-                    break;
-                default:
-                    System.out.println("Неверный месяц");
-                    break;
-            }
 
     }
 }
